@@ -11,12 +11,7 @@ function App() {
   const [filteredTodos, setFilteredTodos] = useState("all");
   const [sortedItems, setSortedItems] = useState([]);
 
-  //use Effect
-  useEffect(()=>{
-    itemSort()
-    }, [todos, filteredTodos]);
-  
-
+ 
 //functions
 const itemSort = ()=>{
   switch(filteredTodos) {
@@ -31,10 +26,15 @@ const itemSort = ()=>{
         break;
    }
 };
-//saving to local storage
-const saveTodos = ()=>{
+ //use Effect
+ useEffect(()=>{
+  itemSort()
+  }, [todos, filteredTodos]);
 
-}
+
+
+
+
 
   return (
     <div className="App">
