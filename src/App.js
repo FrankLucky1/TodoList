@@ -13,21 +13,23 @@ function App() {
 
  
 //functions
-const itemSort = ()=>{
-  switch(filteredTodos) {
-    case "Completed":
-      setSortedItems(todos.filter(todo=> todo.completed === true));
-      break;
-    case 'unCompleted':
-      setSortedItems(todos.filter(todo => todo.completed === false));
-      break;
-      default:
-       setSortedItems(todos);
-        break;
-   }
-};
+
  //use Effect
  useEffect(()=>{
+  const itemSort = ()=>{
+    switch(filteredTodos) {
+      case "Completed":
+        setSortedItems(todos.filter(todo=> todo.completed === true));
+        break;
+      case 'unCompleted':
+        setSortedItems(todos.filter(todo => todo.completed === false));
+        break;
+        default:
+         setSortedItems(todos);
+          break;
+     }
+  };
+   
   itemSort()
   }, [todos, filteredTodos]);
 
