@@ -1,0 +1,27 @@
+.todo-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: auto;
+    grid-gap: 2rem ;
+    margin-bottom: 10px;
+    
+}
+
+
+@media all and (max-width: 500px){
+    .todo-list{
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        margin-right: 70px;
+        grid-gap: 2rem ;
+        margin-bottom: 10px;  
+
+    }
+    .todo-container{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}

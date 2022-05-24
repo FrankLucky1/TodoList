@@ -1,0 +1,79 @@
+.formGroup{
+    height: 15vh;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+input{
+    width: 60%;
+    padding: 20px 10px;
+    height: 20px;
+    border-radius: 7px;
+    border: none;
+    font-size: 1rem;
+}
+::placeholder{
+    color: #ff6f47;
+}
+
+form button {
+    color: #ff6f47;
+    background: #f7fffe;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  form button:hover {
+    color: white;
+    background: #ff6f47;
+  }
+button{
+    width: 30px;
+    padding: 3px 3px;
+    height: 30px;
+    border-radius: 7px;
+    border: none;
+    margin-left: 5px;
+
+}
+select{
+    height: 29px;
+    margin-top: 15px;
+    padding: 0px 3px;
+    border: none;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background-image: none;
+  }
+  /* Custom Select */
+.select {
+    margin: .5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  select {
+    color: #ff6f47;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    width: 7rem;
+  }
+  
+  /* Arrow */
+  .select::after {
+    content: "\25BC";
+    background: #ff6f47;
+    margin-top: 15px;
+    padding: 2px 8px 5px 8px;
+    
+  }
+  /* Transition */
+  /*
+  .select:hover::after {
+    transform: scale(1.5);
+  }
+  */
