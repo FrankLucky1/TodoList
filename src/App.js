@@ -15,9 +15,7 @@ function App() {
 //functions
 
  //use Effect
- useEffect(()=>{
-   getLocalTodos();
- },[]);
+
 
  useEffect(()=>{
   const itemSort = ()=>{
@@ -31,27 +29,11 @@ function App() {
         default:
          setSortedItems(todos);
           break;
-     }
+     };
+  
   };
-   saveTodoLocal();
   itemSort();
   }, [todos, filteredTodos]);
-
-  const saveTodoLocal= () => {
-   
-        localStorage.setItem("todos",JSON.stringify(todos));
-
-  };
-
-  const getLocalTodos=()=>{
-    if( 
-      localStorage.getItem("todo")=== null) {
-        localStorage.setItem("todos",JSON.stringify([]));
-      } else{
-        let todoLocal= JSON.parse(localStorage.getItem("todos"))
-        setTodos(todoLocal)
-      }
-  }; 
 
 
   return (
@@ -71,7 +53,7 @@ function App() {
       <TodoList sortedItems={sortedItems}  setTodos={setTodos} todos={todos}  />
 
 
-      <h2 className="subtitle">FINALLY FINISHED MY 2nd REACT PROJECT</h2>
+      <h2 className="subtitle">WELCOME</h2>
     </div>
   );
 }

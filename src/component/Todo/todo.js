@@ -1,13 +1,13 @@
-import React, {useState} from "react";
+import React from "react";
 import "./todo.css"
 
 const Todo = ({text, todoContent,todos,setTodos})=>{
 
-    const [fall, setFall] = useState(false)
+   
 
     const deleteHandler = () => {
+
         setTodos(todos.filter((el) => el.id !== todoContent.id));
-        console.log(fall)
         
         };
     
@@ -25,7 +25,7 @@ const Todo = ({text, todoContent,todos,setTodos})=>{
     };
 
     return(
-        <div className={`todo ${fall ? "": ""}`}>
+        <div className='todo' >
             <li className={`todo-item ${todoContent.completed ? "completed" : ""}`}>{text}</li>
            <div>
             <button onClick={completedHandler} className="complete-btn">
