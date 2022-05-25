@@ -1,0 +1,35 @@
+.instructions{
+    font-family: 'Times New Roman', Times, serif;
+    width: 45%;
+    margin: auto;
+}
+.ulist{
+    margin-bottom: 1rem;
+}
+.ulist li{
+    margin-bottom: 15px;
+    list-style-position: inside;
+    font-size: 1.2rem;
+}
+.ulist a{
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+
+@media all and (max-width: 500px){
+    .instructions{
+        width: 70%;
+        margin: auto;
+    }
+    
+    .ulist li{
+        font-size: 0.7rem;
+    }
+    .ulist a{
+        font-size: 0.7rem;
+        color: #fff;
+    }
+
+}

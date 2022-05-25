@@ -4,6 +4,7 @@
     margin: auto;
     grid-gap: 2rem ;
     margin-bottom: 10px;
+    transition: all 1s ease-out;
     
 }
 

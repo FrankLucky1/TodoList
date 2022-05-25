@@ -14,9 +14,11 @@
     padding: 5px;
 
       }
-li{
+.todo li{
     list-style: none;
     font-size: 1rem;
+    margin-bottom: 0.7rem;
+    margin-top: 0.7rem;
 }
 .fall {
     transform: translateY(10rem) rotateZ(20deg);

@@ -5,7 +5,10 @@
 }
 .App{
   width: 100%;
-  margin-top: 10rem;
+  margin-top: 5rem;
+}
+.App header{
+  margin-bottom: 3rem;
 }
 .subtitle{
   margin: auto;

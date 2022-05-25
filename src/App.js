@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import './App.css';
 //importing components
+import Instructions from "./component/instructions/Instructions"
 import Form from "./component/Form/form"
 import TodoList from "./component/Todolist/todoList";
 
@@ -39,9 +40,10 @@ function App() {
   return (
     <div className="App">
       <header>
-      
       <h1>Todo List </h1>
       </header >
+      
+      <Instructions/>
 
       <Form 
       setFilteredTodos={setFilteredTodos} 

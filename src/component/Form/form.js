@@ -27,13 +27,13 @@ const Form = ({ setFilteredTodos, setInputText, inputText, todos, setTodos }) =>
         <form className="formGroup">
             <div className="formSection">
                 <input 
-                
                 onChange={inputHandler}
                 value={inputText}
-                type="text" 
-                placeholder="Insert a todo..." 
+                placeholder="What do you want TODO..." 
+                type="text"
+                required 
+                autoFocus
                 className = "todo-input" 
-                
                 />
                     
                     <button 
